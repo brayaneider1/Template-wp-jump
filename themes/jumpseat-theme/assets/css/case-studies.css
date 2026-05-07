@@ -1,0 +1,284 @@
+
+
+.js-cases {
+    background: var(--color-bg);
+    padding: 6rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.js-cases__heading-wrap {
+    margin-bottom: 3rem;
+}
+
+.js-cases__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.js-cases__heading-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.js-cases__line {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    line-height: 1.1;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.js-cases__line--white {
+    color: #FFFFFF;
+}
+
+.js-cases__line--accent {
+    color: var(--color-accent);
+}
+
+.js-cases__arrow {
+    background: transparent;
+    border: none;
+    color: #FFFFFF;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+    transition: transform 0.3s;
+}
+
+.js-cases__arrow:hover {
+    transform: translateX(5px);
+}
+
+
+.js-cases__track-wrap {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.js-cases__track {
+    position: relative;
+}
+
+.js-case-slide {
+    display: none;
+}
+
+.js-case-slide.is-active {
+    display: block;
+}
+
+.js-case__card {
+    background: #05080A;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    
+}
+
+
+.js-case__card-header {
+    height: 40px;
+    background: #0B1116;
+    display: flex;
+    align-items: center;
+    padding: 0 1.5rem;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.js-case__card-brand {
+    font-family: var(--font-mono);
+    font-weight: 400;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.js-case__card-label {
+    font-family: var(--font-mono);
+    font-weight: 400;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+
+.js-case__card-body {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    height: 100%;
+    flex: 1;
+}
+
+
+.js-case__img-col {
+    position: relative;
+    overflow: hidden;
+}
+
+.js-case__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.js-case__client-logo {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.js-case__client-logo img {
+    height: 100%;
+    width: auto;
+}
+
+.js-case__img-content {
+    position: absolute;
+    top: 50%;
+    width: 60%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.js-case__img-title {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    line-height: 1.1;
+    color: #FFCC00;
+    
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.js-case__img-desc {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    color: #FFFFFF;
+    margin: 0;
+    max-width: 90%;
+}
+
+
+.js-case__panel {
+    background: #0B1116;
+    padding: 2.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-left: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.js-case__panel-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.js-case__panel-title {
+    font-family: var(--font-body);
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #FFFFFF;
+    margin-bottom: 1rem;
+}
+
+.js-case__panel-body {
+    font-family: var(--font-body);
+    font-weight: 300;
+    font-size: 0.85rem;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+}
+
+.js-case__panel-cta {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    align-self: flex-end;
+    font-family: var(--font-mono);
+    font-weight: 500;
+    font-size: 0.75rem;
+    color: #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+    padding-bottom: 2px;
+    margin-top: 2rem;
+    transition: gap 0.3s;
+}
+
+.js-case__panel-cta:hover {
+    gap: 0.75rem;
+}
+
+
+.js-cases__dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 2rem;
+}
+
+.js-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+    padding: 0;
+    transition: background 0.3s;
+}
+
+.js-dot.is-active {
+    background: #fff;
+    border-color: #fff;
+}
+
+@media (max-width: 900px) {
+    .js-case__card-body {
+        grid-template-columns: 1fr;
+    }
+
+    .js-case__panel {
+        border-left: none;
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .js-cases__heading {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .js-cases__arrow {
+        align-self: flex-end;
+    }
+}

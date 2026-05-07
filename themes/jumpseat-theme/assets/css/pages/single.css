@@ -1,0 +1,119 @@
+/* Single Post Styles - Selva Studio */
+
+.single-post {
+    padding-top: 60px;
+}
+
+.post-header {
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.post-header__category {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--color-accent);
+    margin-bottom: 20px;
+    display: block;
+}
+
+.post-header__title {
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    line-height: 1.1;
+    margin-bottom: 30px;
+    color: var(--color-white);
+}
+
+.post-header__meta {
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Content Area */
+.container--narrow {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.post-featured-image {
+    margin-bottom: 60px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.post-featured-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.post-content {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: var(--color-text);
+}
+
+.post-content p {
+    margin-bottom: 1.5rem;
+}
+
+.post-content h2, .post-content h3 {
+    color: var(--color-white);
+    margin: 3rem 0 1.5rem;
+}
+
+.post-content blockquote {
+    border-left: 2px solid var(--color-accent);
+    padding-left: 30px;
+    margin: 3rem 0;
+    font-style: italic;
+    color: var(--color-white);
+    font-size: 1.5rem;
+}
+
+/* Footer & Nav */
+.post-footer {
+    margin-top: 80px;
+    padding-top: 40px;
+    border-top: 1px solid #1a1a1a;
+}
+
+.post-tags a {
+    display: inline-block;
+    padding: 5px 15px;
+    background: #111;
+    color: var(--color-text-muted);
+    font-size: 0.8rem;
+    margin-right: 10px;
+    transition: var(--transition-smooth);
+}
+
+.post-tags a:hover {
+    color: var(--color-accent);
+    background: #1a1a1a;
+}
+
+.post-navigation {
+    padding: 80px 0;
+    border-top: 1px solid #1a1a1a;
+}
+
+.post-nav__links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-nav__links a {
+    color: var(--color-white);
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    transition: var(--transition-smooth);
+}
+
+.post-nav__links a:hover {
+    color: var(--color-accent);
+}

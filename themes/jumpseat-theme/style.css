@@ -1,0 +1,82 @@
+:root {
+    --color-bg:       #232A33;
+    --color-surface:  #1B2128;
+    --color-dark:     #181D24;
+    --color-accent:   #F89485;
+    --color-sky:      #49C6F3;
+    --color-text:     #FFFFFF;
+    --color-muted:    #C7C7C7;
+    --color-subtle:   #F2F2F2;
+    --color-border:   rgba(255,255,255,0.15);
+    
+    --font-heading:   'Plus Jakarta Sans', sans-serif;
+    --font-body:      'Plus Jakarta Sans', sans-serif;
+    --font-mono:      'Inter', monospace;
+    
+    --glow-blue:      radial-gradient(29.19% 32.51% at 56.94% 59.75%, #49C6F3 17.88%, #232A33 100%);
+    --glow-peach:     radial-gradient(29.19% 32.51% at 56.94% 59.75%, #F89485 17.88%, #232A33 100%);
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px; 
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+}
+
+a { text-decoration: none; color: inherit; transition: 0.3s; }
+img { max-width: 100%; display: block; }
+ul { list-style: none; }
+
+.container {
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 0 5vw; 
+}
+
+.section {
+    padding: 8rem 0; 
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    .section { padding: 4rem 0; }
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, #49C6F3 5.97%, #F89485 94.97%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.js-reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+.js-reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}

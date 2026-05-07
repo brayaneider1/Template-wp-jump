@@ -1,0 +1,50 @@
+
+
+.js-header__logo {
+    font-family: var(--font-mono);
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 0.02em;
+    color: var(--color-text);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+
+.js-header__logo-img {
+    height: 40px;
+    width: auto;
+    display: block;
+    object-fit: contain;
+}
+
+.js-footer__logo-img {
+    height: 36px;
+    width: auto;
+    display: block;
+    object-fit: contain;
+}
+
+
+.js-hero__content-lower {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    text-align: center;
+    white-space: nowrap;
+}
+
+
+.icon-arrow-right {
+    display: inline-block;
+    width: 24px; height: 24px;
+    vertical-align: middle;
+}
+
+
+.section--flush { padding: 0; }
+.section--sm    { padding: 3rem 0; }
+.section--lg    { padding: 9rem 0; }
+

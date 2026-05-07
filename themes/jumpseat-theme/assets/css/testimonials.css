@@ -1,0 +1,77 @@
+.js-testi {
+    background: var(--color-bg);
+    padding: 10rem 0;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.glow-blob--testi-blue {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: #49C6F3;
+    top: -10%;
+    left: 20%;
+    opacity: 0.1;
+    filter: blur(120px);
+}
+
+.glow-blob--testi-peach {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: var(--color-accent);
+    bottom: -10%;
+    right: 20%;
+    opacity: 0.1;
+    filter: blur(120px);
+}
+
+.js-testi__header {
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.js-testi__client-logo {
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+}
+
+.js-testi__quote {
+    font-family: var(--font-body);
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    font-weight: 600;
+    line-height: 1.4;
+    max-width: 900px;
+    margin: 0 auto 3rem;
+}
+
+.js-testi__quote .white { color: #fff; }
+.js-testi__quote .accent { color: var(--color-accent); }
+
+.js-testi__author {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.js-testi__author .name {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.js-testi__author .title {
+    font-family: var(--font-body);
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
